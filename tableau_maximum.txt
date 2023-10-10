@@ -1,0 +1,19 @@
+algorithme tableau_maximum
+
+variable
+	tableau T(10):entier
+	i,max:entier
+
+Debut
+	pour i <-- 0 a 9 faire 
+		ecrire("donner le nombre ",i+1)
+		lire(T(i))
+	fin pour
+	max<--T(0)
+	pour i <-- 1 a 9 faire 
+		si (max<T(i)) alors
+			max<--T(i)
+		fin si
+	fin pour
+	ecrire("le maximum est : ",max)		
+fin
